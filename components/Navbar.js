@@ -17,9 +17,7 @@ export default function Navbar() {
         {links.map(link => (
           <Link key={link.href} href={link.href} legacyBehavior>
             <a
-              className={`flex items-center gap-2 font-medium hover:text-blue-200 transition ${
-                router.pathname === link.href ? 'text-blue-100' : 'text-white'
-              }`}
+              className={\`flex items-center gap-2 font-medium hover:text-blue-200 transition \${router.pathname === link.href ? 'text-blue-100' : 'text-white'}\`}
             >
               <span>{link.icon}</span> {link.label}
             </a>
